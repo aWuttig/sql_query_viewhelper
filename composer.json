@@ -1,5 +1,5 @@
 {
-    "name": "aWuttig/sql-query-viewhelper",
+    "name": "aWuttig/typo3-viewhelper",
     "description": "Provides TYPO3 Fluid ViewHelper to execute SQL Query from fluid template.",
     "type": "typo3-cms-extension",
     "keywords": [
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Wuttig\\SqlQueryViewHelper\\": "Classes"
+            "Wuttig\\ViewHelper\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Wuttig\\SqlQueryViewHelper\\Tests\\": "Tests"
+            "Wuttig\\ViewHelper\\Tests\\": "Tests"
         }
     },
     "config": {
@@ -45,7 +45,7 @@
         "bin-dir": "build/bin"
     },
     "replace": {
-        "sql_query_view_helper": "*"
+        "aw_view_helper": "*"
     },
     "extra": {
         "helhum/typo3-console": {
