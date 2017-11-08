@@ -47,6 +47,8 @@ class ExecuteViewHelperTest extends ViewHelperBaseTestcase
             'as' => 'results'
         ];
 
+        $this->viewHelper->setArguments($arguments);
+
         $GLOBALS['TYPO3_DB'] = $this->getMockBuilder(DatabaseConnection::class)->setMethods(
             [
                 'fullQuoteStr',
@@ -70,8 +72,6 @@ class ExecuteViewHelperTest extends ViewHelperBaseTestcase
             ->method('exec_SELECTgetRows')
             ->with('uid,title', 'pages', ' pid = 1 ')
             ->willReturn($rows);
-
-        $this->viewHelper->setArguments($arguments);
 
         $this->viewHelper->render();
     }

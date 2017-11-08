@@ -13,14 +13,26 @@ use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
  */
 class GpViewHelper extends AbstractViewHelper
 {
+    /**
+     *
+     */
+    public function initializeArguments()
+    {
+        parent::initializeArguments();
+        $this->registerArgument('name', 'string', 'The name of the GPVar', true);
+        $this->registerArgument('merged', 'boolean', 'Use _GPMerged', false, false);
+    }
 
     /**
      * @param string $name The name of the GPVar
      * @param bool $merged
      * @return array|mixed
      */
-    public function render($name, $merged = false)
+    public function render()
     {
+        $name = $this->arguments['name'];
+        $merged = $this->arguments['merged'];
+
         if (strpos($name, '.') !== false) {
             $segments = explode('.', $name);
             $variableRootName = array_shift($segments);
