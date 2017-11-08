@@ -1,0 +1,60 @@
+{
+    "name": "aWuttig/sql-query-viewhelper",
+    "description": "Provides TYPO3 Fluid ViewHelper to execute SQL Query from fluid template.",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3",
+        "CMS",
+        "sql",
+    ],
+    "homepage": "http://typo3.org",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Andre Wuttig",
+            "email": "andr.wuttig@gmail.com",
+            "homepage": "https://github.com/aWuttig",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "andr.wuttig@gmail.com",
+        "issues": "https://github.com/aWuttig/sql_query_viewhelper/issues",
+        "source": "https://github.com/aWuttig/sql_query_viewhelper"
+    },
+    "require": {
+        "typo3/cms": "^7.6"
+    },
+    "require-dev": {
+        "nimut/testing-framework": "^1.0",
+        "phpunit/phpunit": "~4.8.0",
+        "squizlabs/php_codesniffer": "~3.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AWuttig\\SqlQueryViewHelper\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AWuttig\\SqlQueryViewHelper\\Tests\\": "Tests"
+        }
+    },
+    "config": {
+        "vendor-dir": "build/vendor",
+        "bin-dir": "build/bin"
+    },
+    "replace": {
+        "sql_query_viewhelper": "*"
+    },
+    "extra": {
+        "helhum/typo3-console": {
+            "install-binary": false,
+            "install-extension-dummy": false
+        },
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": "build/web"
+        }
+    }
+}
