@@ -1,6 +1,6 @@
 <?php
 
-namespace Wuttig\SqlQueryViewHelper;
+namespace Wuttig\SqlQueryViewHelper\ViewHelpers;
 
 use TYPO3\CMS\Core\Database\DatabaseConnection;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
@@ -8,7 +8,7 @@ use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
  * Class SqlViewHelper
- * @package Wuttig\SqlQueryViewHelper
+ * @package Wuttig\SqlQueryViewHelper\ViewHelpers
  */
 class SqlViewHelper extends AbstractViewHelper
 {
