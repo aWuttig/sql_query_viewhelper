@@ -71,4 +71,27 @@ class GpViewHelperTest extends ViewHelperBaseTestcase
 
         $this->assertArraySubset($expected, $result);
     }
+
+    /**
+     * @test
+     */
+    public function renderReturnGetPostParameterWithMergedAndPropertyPath()
+    {
+        $arguments = [
+            'name' => 'tx_foo_pi1.foo',
+            'merged' => true
+        ];
+        $_GET['tx_foo_pi1']['foo']['bar'] = 'get';
+        $_POST['tx_foo_pi1']['foo']['bar'] = 'post';
+
+        $this->viewHelper->setArguments($arguments);
+
+        $result = $this->viewHelper->render();
+
+        $expected = [
+            'bar' => 'post'
+        ];
+
+        $this->assertArraySubset($expected, $result);
+    }
 }

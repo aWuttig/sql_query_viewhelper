@@ -31,7 +31,7 @@ class GpViewHelper extends AbstractViewHelper
     public function render()
     {
         $name = $this->arguments['name'];
-        $merged = $this->arguments['merged'];
+        $merged = isset($this->arguments['merged']) ? $this->arguments['merged'] : false;
 
         if (strpos($name, '.') !== false) {
             $segments = explode('.', $name);
