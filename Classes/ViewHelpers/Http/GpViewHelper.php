@@ -44,5 +44,4 @@ class GpViewHelper extends AbstractViewHelper
         }
         return $result;
     }
-
 }

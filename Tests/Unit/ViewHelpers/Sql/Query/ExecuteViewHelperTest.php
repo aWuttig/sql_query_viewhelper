@@ -53,7 +53,8 @@ class ExecuteViewHelperTest extends ViewHelperBaseTestcase
                 'fullQuoteStr',
                 'exec_SELECTquery',
                 'sql_fetch_assoc'
-            ])
+            ]
+        )
             ->disableOriginalConstructor()->getMock();
         $GLOBALS['TYPO3_DB']
             ->expects($this->any())

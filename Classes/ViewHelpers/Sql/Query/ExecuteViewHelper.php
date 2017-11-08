@@ -5,7 +5,6 @@ namespace Wuttig\AwViewHelper\ViewHelpers\Sql\Query;
 use TYPO3\CMS\Core\Database\DatabaseConnection;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
-
 /**
  * Class ExecuteViewHelper
  * @package Wuttig\AwViewHelper\ViewHelpers\Sql\Query
@@ -32,7 +31,8 @@ class ExecuteViewHelper extends AbstractViewHelper
     /**
      * @return string
      */
-    public function render() {
+    public function render()
+    {
         $table = $this->arguments['table'];
         $fields = $this->arguments['fields'];
         $conditions = $this->arguments['conditions'];
@@ -55,6 +55,7 @@ class ExecuteViewHelper extends AbstractViewHelper
                     $databaseConnection->fullQuoteStr($condition['value'], $table)
                 ]
             );
+
             $whereClause .= $conditionString;
         }
 
@@ -79,5 +80,4 @@ class ExecuteViewHelper extends AbstractViewHelper
     {
         return $GLOBALS['TYPO3_DB'];
     }
-
 }
