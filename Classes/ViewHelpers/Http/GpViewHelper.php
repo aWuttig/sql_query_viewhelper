@@ -1,6 +1,6 @@
 <?php
 
-namespace Wuttig\ViewHelper\ViewHelpers\Http;
+namespace Wuttig\AwViewHelper\ViewHelpers\Http;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Reflection\ObjectAccess;
@@ -9,7 +9,7 @@ use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 /**
  * Class GpViewHelper
  *
- * @package Wuttig\ViewHelper\ViewHelpers\Http
+ * @package Wuttig\AwViewHelper\ViewHelpers\Http
  */
 class GpViewHelper extends AbstractViewHelper
 {

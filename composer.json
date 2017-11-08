@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Wuttig\\ViewHelper\\": "Classes"
+            "Wuttig\\AwViewHelper\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Wuttig\\ViewHelper\\Tests\\": "Tests"
+            "Wuttig\\AwViewHelper\\Tests\\": "Tests"
         }
     },
     "config": {
