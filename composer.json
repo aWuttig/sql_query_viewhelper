@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AWuttig\\SqlQueryViewHelper\\": "Classes"
+            "Wuttig\\SqlQueryViewHelper\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AWuttig\\SqlQueryViewHelper\\Tests\\": "Tests"
+            "Wuttig\\SqlQueryViewHelper\\Tests\\": "Tests"
         }
     },
     "config": {

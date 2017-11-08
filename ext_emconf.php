@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'iCal',
+    'title' => 'SQL Query ViewHelper',
     'description' => 'Provides TYPO3 Fluid ViewHelper to execute SQL Query from fluid template.',
     'category' => 'plugin',
     'author' => 'André Wuttig',
