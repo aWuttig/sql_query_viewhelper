@@ -42,15 +42,17 @@ class ExecuteViewHelper extends AbstractViewHelper
 
         $databaseConnection = $this->getDatabaseConnection();
 
+
         $whereClause = '';
         foreach ($conditions as $condition) {
+            $operator = isset($condition['operator']) ?  $condition['operator'] : '';
             $conditionString = vsprintf(
                 '%s %s %s %s ',
                 [
-                    $condition['operator'],
+                    $operator,
                     $condition['field'],
                     $condition['expression'],
-                    $condition['value']
+                    $databaseConnection->fullQuoteStr($condition['value'], $table)
                 ]
             );
             $whereClause .= $conditionString;
