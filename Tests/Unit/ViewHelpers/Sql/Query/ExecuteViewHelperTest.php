@@ -1,6 +1,6 @@
 <?php
 
-namespace Portrino\PxICal\Tests\Unit\Service\ViewHelpers\Sql\Query;
+namespace Wuttig\AwViewHelper\Tests\Unit\ViewHelpers\Sql\Query;
 
 use PHPUnit_Framework_MockObject_MockObject;
 use TYPO3\CMS\Core\Database\DatabaseConnection;
@@ -9,8 +9,7 @@ use Wuttig\AwViewHelper\ViewHelpers\Sql\Query\ExecuteViewHelper;
 
 /**
  * Class ExecuteViewHelperTest
- *
- * @package Portrino\PxICal\Tests\Service\ViewHelpers\Sql\Query
+ * @package Wuttig\AwViewHelper\Tests\Unit\ViewHelpers\Sql\Query
  */
 class ExecuteViewHelperTest extends ViewHelperBaseTestcase
 {
