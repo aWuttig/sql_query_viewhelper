@@ -1,3 +1,4 @@
 parameters:
     ignoreErrors:
-        - '#Call to an undefined method PHPUnit_Framework_MockObject_MockObject::[a-zA-Z0-9_]+\(\)#'
+        - '#Call to an undefined method PHPUnit_Framework_MockObject_MockObject::initializeArguments()#'
+        - '#[\s\S] PHPUnit_Framework_MockObject_MockObject given.#'
