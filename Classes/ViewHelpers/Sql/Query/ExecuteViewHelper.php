@@ -49,7 +49,7 @@ class ExecuteViewHelper extends AbstractViewHelper
                     $operator,
                     $condition['field'],
                     $condition['expression'],
-                    $databaseConnection->fullQuoteStr($condition['value'], $table)
+                    $condition['value']
                 ]
             );
 
